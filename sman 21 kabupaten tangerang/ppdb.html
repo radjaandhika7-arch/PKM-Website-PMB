@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPDB SMAN 21 Kabupaten Tangerang</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f7fb;
+    color: #243247;
+}
+
+header {
+    background: #102f50;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #f4c75e;
+}
+
+.hero {
+    min-height: 480px;
+    padding: 90px 8%;
+    background: linear-gradient(
+        90deg,
+        rgba(10,35,65,.95),
+        rgba(10,35,65,.55)
+    ), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    max-width: 750px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    background: #e9b949;
+    color: #102f50;
+    padding: 13px 25px;
+    margin-top: 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+}
+
+section {
+    padding: 65px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    color: #102f50;
+    font-size: 30px;
+}
+
+.section-title p {
+    margin-top: 10px;
+    color: #718096;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 27px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.06);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #174a78;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #667085;
+    line-height: 1.7;
+}
+
+.about {
+    background: white;
+    line-height: 1.9;
+    text-align: center;
+}
+
+.about p {
+    max-width: 850px;
+    margin: auto;
+}
+
+.requirements {
+    background: #eaf1f8;
+}
+
+.requirements ul {
+    max-width: 750px;
+    margin: auto;
+    line-height: 2.3;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 15px;
+}
+
+.step {
+    background: #102f50;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.step span {
+    color: #f4c75e;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cta {
+    background: #102f50;
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #091e34;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+}
+
+@media(max-width: 700px) {
+    header {
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SMAN 21 KABUPATEN TANGERANG</div>
+
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#jalur">Jalur PPDB</a>
+        <a href="#syarat">Persyaratan</a>
+        <a href="#alur">Alur</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>PENERIMAAN PESERTA DIDIK BARU</h1>
+    <h2>TAHUN AJARAN 2027/2028</h2>
+
+    <p>
+        Selamat datang di halaman resmi informasi PPDB
+        SMAN 21 Kabupaten Tangerang.
+        Mari bergabung bersama kami untuk menciptakan
+        generasi cerdas, berkarakter, dan berprestasi.
+    </p>
+
+    <a href="#jalur" class="btn">LIHAT INFORMASI PPDB</a>
+</div>
+
+<section class="about" id="profil">
+    <div class="section-title">
+        <h2>Selamat Datang</h2>
+        <p>SMAN 21 Kabupaten Tangerang</p>
+    </div>
+
+    <p>
+        SMAN 21 Kabupaten Tangerang memberikan kesempatan
+        kepada lulusan SMP/MTs sederajat untuk melanjutkan
+        pendidikan ke jenjang Sekolah Menengah Atas.
+        Melalui pendidikan yang berkualitas, kami berkomitmen
+        mendukung perkembangan potensi peserta didik,
+        membangun karakter positif, dan meraih prestasi.
+    </p>
+</section>
+
+<section id="jalur">
+    <div class="section-title">
+        <h2>Jalur Penerimaan</h2>
+        <p>Pilih jalur pendaftaran sesuai ketentuan yang berlaku.</p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Jalur Domisili</h3>
+            <p>Penerimaan berdasarkan wilayah tempat tinggal calon peserta didik.</p>
+        </div>
+
+        <div class="card">
+            <h3>Jalur Afirmasi</h3>
+            <p>Kesempatan bagi calon peserta didik yang memenuhi persyaratan afirmasi.</p>
+        </div>
+
+        <div class="card">
+            <h3>Jalur Prestasi</h3>
+            <p>Penerimaan berdasarkan prestasi akademik dan nonakademik sesuai ketentuan.</p>
+        </div>
+
+        <div class="card">
+            <h3>Jalur Mutasi</h3>
+            <p>Penerimaan berdasarkan perpindahan tugas orang tua atau wali sesuai aturan.</p>
+        </div>
+    </div>
+</section>
+
+<section class="requirements" id="syarat">
+    <div class="section-title">
+        <h2>Persyaratan Pendaftaran</h2>
+        <p>Siapkan dokumen sebelum melakukan pendaftaran.</p>
+    </div>
+
+    <ul>
+        <li>Lulusan SMP/MTs atau sederajat.</li>
+        <li>Memiliki dokumen identitas diri.</li>
+        <li>Memiliki ijazah atau surat keterangan lulus.</li>
+        <li>Menyiapkan Kartu Keluarga.</li>
+        <li>Menyiapkan dokumen sesuai jalur pendaftaran.</li>
+        <li>Mengikuti seluruh tahapan seleksi.</li>
+    </ul>
+</section>
+
+<section id="alur">
+    <div class="section-title">
+        <h2>Alur Pendaftaran</h2>
+        <p>Ikuti tahapan pendaftaran berikut ini.</p>
+    </div>
+
+    <div class="steps">
+        <div class="step">
+            <span>01</span>
+            <h3>Persiapan</h3>
+            <p>Siapkan dokumen pendaftaran.</p>
+        </div>
+
+        <div class="step">
+            <span>02</span>
+            <h3>Pendaftaran</h3>
+            <p>Isi data melalui portal resmi.</p>
+        </div>
+
+        <div class="step">
+            <span>03</span>
+            <h3>Verifikasi</h3>
+            <p>Periksa kelengkapan dokumen.</p>
+        </div>
+
+        <div class="step">
+            <span>04</span>
+            <h3>Pengumuman</h3>
+            <p>Pantau hasil seleksi.</p>
+        </div>
+
+        <div class="step">
+            <span>05</span>
+            <h3>Daftar Ulang</h3>
+            <p>Lengkapi proses daftar ulang.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>AYO BERGABUNG BERSAMA KAMI!</h2>
+    <p>
+        Bersama SMAN 21 Kabupaten Tangerang,
+        wujudkan masa depan yang cerdas dan berprestasi.
+    </p>
+    <a href="https://spmb.bantenprov.go.id/"
+       class="btn" target="_blank">
+       PORTAL INFORMASI SPMB
+    </a>
+</section>
+
+<footer>
+    <p>© 2027 SMAN 21 KABUPATEN TANGERANG</p>
+    <p>Website Informasi Penerimaan Peserta Didik Baru</p>
+</footer>
+
+</body>
+</html>
